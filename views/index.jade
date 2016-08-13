@@ -1,0 +1,117 @@
+extends layout
+
+block content
+    .page
+        .title= title
+        .content
+            img(src='images/git_logo.png',alt='git',class='pull-right')
+
+
+    .page
+        .title git简介
+        .content
+            p 读音：
+                strong /gɪt/
+            p 定义：一款免费、开源的分布式
+                strong(title='一种记录若干文件内容变化，以便将来查阅特定版本修订情况的系统。') 版本控制系统
+            p 作用：
+                ul
+                    li 可以将某个文件回溯到之前的状态，甚至将整个项目都回退到过去某个时间点的状态。
+                    li 可以比较文件变化细节，查出是谁最后修改了什么地方从而造成某些怪异问题，又是谁在何时报告了某个功能缺陷，等等。
+    .page
+        .title 参考书籍
+        .content
+            a(href="/books/Pro_Git.pdf", title="Pro Git, 2nd Edition", class='btn btn-primary intro-shelf') 下载中文版电子书
+            a(href="http://it-ebooks.info/book/4519/", title="Pro Git, 2nd Edition", class='btn intro-shelf') 下载英文装逼版
+            img(src="/images/pro_git_2nd_edition.jpg",alt="Pro Git, 2nd Edition", class='pull-right')
+    .page
+        .title 下载
+        .content
+            img(src='/images/gwindows_logo.png', alt='git for window')
+            a(href="https://git-for-windows.github.io/", class='btn intro-shelf') 官网下载
+            a(href='/apps/Git-2.9.2-64-bit.exe',class='btn btn-primary intro-shelf') 本站下载
+    .page
+        .title 安装
+        .content
+            - var n = 1
+            ul
+                while n < 10
+                    li
+                        img(src='/images/git_install_step0#{n}.png', alt='step#{n}')
+                    - n++
+
+    .page
+        .title 使用
+        .content
+            h3 配置
+            p 列出当前配置
+            pre
+                code(class='cmd') git config --list
+            p 修改配置
+            pre
+                code(class='cmd').
+                    git config --global user.name "骚年你宇宙超级英雄无敌高大尚的别名"
+                    git config --global user.email "留下你邮箱方便人肉，约炮等"
+            h3 创建仓库
+            pre
+                code(class='cmd').
+                    cd 进入你带种子的目录
+                    git init
+
+            h3 查看状态
+            pre
+                code(class='cmd') git status
+
+            h3 添加文件
+            pre
+                code(class='cmd') git add xxoo.torrent src/*.java
+            h3 提交文件
+            pre
+                code(class='cmd') git commit -m '提交前最好带上类“哥到此一游”等备注'
+    .page
+        .title eclipse上使用
+        .content
+            //img(src='/images/egit.png', alt='egit')
+            - var n = 1
+            ul
+                while n < 10
+                    li
+                        img(src='/images/egit_0#{n}.png', alt='egit_0${n}')
+                    - n++
+                while n <= 15
+                    li
+                        img(src='/images/egit_#{n}.png', alt='egit_${n}')
+                    - n++
+
+    .page
+        .title github查找代码
+        .content
+            - var n = 1
+            ul
+                while n <= 3
+                    li
+                        img(src='/images/github_search_0#{n}.png', alt='github_search_0#{n}.png')
+                    - n++
+    .page
+        .title 命令行方式下载开源代码
+        .content
+            - var n = 1
+            ul
+                while n <= 3
+                    li
+                        img(src='/images/git_clone_0#{n}.png', alt='git_clone_0#{n}')
+                    - n++
+
+    .page
+        .title eclipse下载开源代码
+        .content
+            - var n = 1
+            ul
+                while n < 10
+                    li
+                        img(src='/images/eclipse_clone_0#{n}.png', alt='eclipse_clone_0${n}')
+                    - n++
+                while n <= 11
+                    li
+                    img(src='/images/eclipse_clone_#{n}.png', alt='eclipse_clone_${n}')
+                    - n++
