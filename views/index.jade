@@ -21,15 +21,15 @@ block content
     .page
         .title 参考书籍
         .content
-            a(href="/books/Pro_Git.pdf", title="Pro Git, 2nd Edition", class='btn btn-primary intro-shelf') 下载中文版电子书
+            a(href="books/Pro_Git.pdf", title="Pro Git, 2nd Edition", class='btn btn-primary intro-shelf') 下载中文版电子书
             a(href="http://it-ebooks.info/book/4519/", title="Pro Git, 2nd Edition", class='btn intro-shelf') 下载英文装逼版
-            img(src="/images/pro_git_2nd_edition.jpg",alt="Pro Git, 2nd Edition", class='pull-right')
+            img(src="images/pro_git_2nd_edition.jpg",alt="Pro Git, 2nd Edition", class='pull-right')
     .page
         .title 下载
         .content
-            img(src='/images/gwindows_logo.png', alt='git for window')
+            img(src='images/gwindows_logo.png', alt='git for window')
             a(href="https://git-for-windows.github.io/", class='btn intro-shelf') 官网下载
-            a(href='/apps/Git-2.9.2-64-bit.exe',class='btn btn-primary intro-shelf') 本站下载
+            a(href='apps/Git-2.9.2-64-bit.exe',class='btn btn-primary intro-shelf') 本站下载
     .page
         .title 安装
         .content
@@ -37,7 +37,7 @@ block content
             ul
                 while n < 10
                     li
-                        img(src='/images/git_install_step0#{n}.png', alt='step#{n}')
+                        img(src='images/git_install_step0#{n}.png', alt='step#{n}')
                     - n++
 
     .page
@@ -76,16 +76,16 @@ block content
     .page
         .title eclipse上使用
         .content
-            //img(src='/images/egit.png', alt='egit')
+            //img(src='images/egit.png', alt='egit')
             - var n = 1
             ul
                 while n < 10
                     li
-                        img(src='/images/egit_0#{n}.png', alt='egit_0${n}')
+                        img(src='images/egit_0#{n}.png', alt='egit_0#{n}')
                     - n++
                 while n <= 15
                     li
-                        img(src='/images/egit_#{n}.png', alt='egit_${n}')
+                        img(src='images/egit_#{n}.png', alt='egit_#{n}')
                     - n++
 
     .page
@@ -95,7 +95,7 @@ block content
             ul
                 while n <= 3
                     li
-                        img(src='/images/github_search_0#{n}.png', alt='github_search_0#{n}.png')
+                        img(src='images/github_search_0#{n}.png', alt='github_search_0#{n}.png')
                     - n++
     .page
         .title 命令行方式下载开源代码
@@ -104,7 +104,7 @@ block content
             ul
                 while n <= 3
                     li
-                        img(src='/images/git_clone_0#{n}.png', alt='git_clone_0#{n}')
+                        img(src='images/git_clone_0#{n}.png', alt='git_clone_0#{n}')
                     - n++
 
     .page
@@ -114,9 +114,9 @@ block content
             ul
                 while n < 10
                     li
-                        img(src='/images/eclipse_clone_0#{n}.png', alt='eclipse_clone_0${n}')
+                        img(src='images/eclipse_clone_0#{n}.png', alt='eclipse_clone_0#{n}')
                     - n++
                 while n <= 11
                     li
-                    img(src='/images/eclipse_clone_#{n}.png', alt='eclipse_clone_${n}')
+                    img(src='images/eclipse_clone_#{n}.png', alt='eclipse_clone_#{n}')
                     - n++
